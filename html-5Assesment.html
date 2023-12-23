@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .dropdown-container {
+      position: relative;
+      display: inline-block;
+    }
+
+    .navbar {
+      border: 1px solid black;
+      align-items: center ;
+      padding: 10px 0;
+      background-color: rgb(7, 7, 202);
+    }
+
+    button {
+      background-color: rgb(7, 7, 202);
+      /* height: 40px; */
+      padding: 5px 30px;
+      /* width: 70px; */
+      border: none;
+      color: white;
+      margin:0 10px;
+
+    }
+
+    .Login {
+      background-color: white;
+      border: 1px solid black;
+      color: black;
+      /* width: 70px; */
+    }
+
+    .dropdown-button {
+      color: white;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .dropdown-button:hover {
+      background-color: rgb(3, 3, 99);
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      min-width: 120px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content div {
+      padding: 12px 16px;
+      display: block;
+    }
+
+    .dropdown-container:hover .dropdown-content {
+      display: block;
+      background-color: rgb(7, 7, 202);
+      color: white;
+    }
+
+    .dropdown-More:hover .dropdown-cont {
+      display: block;
+    }
+
+    .dropdown-count div {
+      display: block;
+    }
+
+    .dropdown-cont {
+      background-color: rgb(7, 7, 202);
+      margin-left: 80px;
+      display: none;
+      position: absolute;
+      min-width: 100px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .logo {
+      color: white;
+      padding: 10px;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+    }
+    .btns{
+      /* padding-top: 6px; */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="logo">
+      logo
+      <!-- <img src="../IMAGES/tharlogo01.png" alt="" height="25px"> -->
+    </div>
+
+    <div class="btns">
+
+
+      <button class="Home">Home</button>
+      <button class="about">About</button>
+
+      <div class="dropdown-container">
+
+        <button class="dropdown-button">service</button>
+        <div class="dropdown-content">
+          <div>Web desighn</div>
+          <hr>
+          <div>Marketing</div>
+          <hr>
+          <div>Wordpress</div>
+          <hr>
+
+
+          <div class="dropdown-More">
+
+            <button class="dropdown-more">More ></button>
+            <div class="dropdown-cont">
+              <div>Html</div>
+              <hr>
+              <div>Css</div>
+              <hr>
+              <div>Javascript</div>
+              <hr>
+              <div>jquery</div>
+
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <button class="blogs">blogs</button>
+      <button class="contacts">contacts</button>
+      <button class="Login">Login</button>
+
+    </div>
+  </div>
+
+
+</body>
+
+</html>
