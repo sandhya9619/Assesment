@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>change image task</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main {
+            margin: 3 auto;
+        }
+
+        .btn {
+            display: flex;
+            justify-content: space-between;
+            width: 200px;
+        }
+
+        button {
+            height: 30px;
+            width: 100%;
+            margin: 10px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <img src="../javascript-assesment/image/01image.avif" height="500px" alt="" id="change">
+    </div>
+    <div class="btn">
+        <button class="back" onclick="back()">back</button>
+        <button class="next" onclick="next()">next</button>
+    </div>
+
+</body>
+
+<script>
+
+    let image = document.getElementById("change");
+    let position = 0;
+    let imageslider = ["../javascript-assesment/image/01image.avif"  , "../javascript-assesment/image/08image.avif", "../javascript-assesment/image/05image.avif", "../javascript-assesment/image/04image.avif"];
+
+    function next() {
+        if (position >= imageslider.length - 1) {
+            return false;
+        }
+        position++
+        image.src = imageslider[position];
+
+    }
+
+    function back() {
+        if (position <= 0) {
+            return false;
+        }
+        position--
+        image.src = imageslider[position];
+
+    }
+</script>
+
+</html>
