@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="file:///C:/Users/bk/Downloads/Date-Interval.js"></script>
+    <title>Date-Interval</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        /* background-color: rgb(5, 85, 156); */
+
+      }
+
+      .Box {
+        background-color: rgb(184, 216, 244);
+        width: 40%;
+        margin: 99px auto;
+        border: 2px solid black;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 30px;
+        font-weight: bolder;
+        padding: 20px 0;
+      }
+
+      label {
+        display: inline-block;
+        width: 15%;
+        font-size: 20px;
+        font-weight: bolder;
+      }
+
+      input {
+        /* background-color: rgb(176, 175, 175); */
+        background-color: rgb(67, 127, 179);
+
+        width: 40%;
+        padding: 2px;
+        border: 2px solid black;
+      }
+
+      #btn {
+        background-color: rgb(5, 85, 156);
+        color: white;
+
+        width: 20%;
+        padding: 2px 0;
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 25px;
+        cursor: pointer;
+      }
+
+      h2 {
+        display: flex;
+        width: 60%;
+        margin-left: 30px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+      }
+
+      #R1,
+      #R2,
+      #R3 {
+        width: 20%;
+      }
+
+      #Result {
+        border: 2px solid black;
+        width: 70%;
+        padding: 12px 0;
+        margin: 0 auto 20px auto;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="Box">
+      <h1>Date-Interval</h1>
+
+      <label for="from">Date 1 :</label>
+      <input type="date" id="from" value=""><br><br>
+    
+      
+
+      <label for="to">Date 2 :</label>
+      <input type="date" id="to" value=""><br><br>
+      
+      <button id="btn" onclick="Result()">Results</button>
+
+      <div id="Result">
+        <h2>TotalDays = <div id="R1"></div></h2>
+        <h2>TotalMonths = <div id="R2"></div></h2>
+        <h2>TotalYears = <div id="R3"></div></h2>
+      </div>
+
+
+    </div>
+
+  
+  </body>
+</html>

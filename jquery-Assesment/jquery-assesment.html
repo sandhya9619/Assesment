@@ -7,15 +7,30 @@
     <title>Jquery-Assesment</title>
 </head>
 <style>
-    th{
+    th {
         text-align: start;
     }
-    input{
-        width: 200px;
+
+    input {
+        margin-left: -10px;
+        width: 400px;
         height: 30px;
     }
-    table{
+
+    table {
         /* width: 50%; */
+    }
+
+    .MFle {
+        width: 100px;
+        height: 20px;
+    }
+
+    .submit {
+        width: 120px;
+        height: 30px;
+        background-color: rgb(37, 253, 40);
+        margin-top: 20px;
     }
 </style>
 
@@ -26,7 +41,7 @@
             <table align="">
                 <tr>
                     <th> First Name</th>
-                    <td><input type="enter your first name" placeholder="Enter your first name"></td>
+                    <td><input type="enter your first name" id="fname" placeholder="Enter your first name"></td>
                 </tr>
                 <tr>
                     <th>Last Name</th>
@@ -43,8 +58,8 @@
                 <tr>
                     <th>Gender</th>
                     <td>
-                        male<input type="radio" name="male">
-                        Female<input type="radio" name="female">
+                        male<input type="radio" class="MFle" name="male">
+                        Female<input type="radio" class="MFle" name="female">
                     </td>
 
                 </tr>
@@ -88,11 +103,19 @@
                 </tr>
 
                 <tr>
-                    <th><input type="Submit"></th>
+                    <th><button class="submit">registered</button></th>
                 </tr>
             </table>
         </form>
     </fieldset>
+
+    <script>
+        let name=document.getElementById("fname")
+        if (fname.value =="") {
+            alert("pleas enter your first name")
+        }
+
+    </script>
 
 </body>
 
